@@ -1,24 +1,19 @@
-# README
+# le mailer
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## use
 
-Things you may want to cover:
+tu peux cloner pour avoir le code
 
-* Ruby version
+pour consulter le site, je te conseille
+la version production sur heroku :
+[https://thpmailer.herokuapp.com/](https://thpmailer.herokuapp.com/)
 
-* System dependencies
+## disclaimer
 
-* Configuration
+j'étais pas très en forme aujourd'hui,
+j'ai pas fait d'efforts pour la présentation,
+veux-tu bien m'excuser
 
-* Database creation
+## la team
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Guillaume Silvent
