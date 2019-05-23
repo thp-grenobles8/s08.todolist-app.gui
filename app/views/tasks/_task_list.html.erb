@@ -1,9 +1,5 @@
-<ul>
-  <% @tasks.each do |task|  %>
-    <li>
-      <%= task.title %>,
-      "Deadline : " <%=  task.deadline.strftime("%D")  %>
-       <%= link_to "Edit this task", edit_task_path(task) %>
-    </li>
+<ul id="task_list_<%= category ? category.gsub(/[ \/\\,:]/,"-") : "" %>">
+  <% tasks.each do |task|  %>
+    <%= render "tasks/task", task: task %>
   <% end %>
 </ul>

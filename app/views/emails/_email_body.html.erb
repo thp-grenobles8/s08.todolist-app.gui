@@ -1,0 +1,15 @@
+
+<h2><%= email.object %></h2>
+<p><%= email.body %></p>
+
+<%= link_to email_path(email), method: :delete,
+class: "btn btn-outline-secondary", remote: true do %>
+  <i class= "fa fa-trash"></i>
+  Supprimer
+<% end %>
+
+<%= link_to emails_path, method: :post,
+class: "btn btn-outline-secondary", remote: true do %>
+  <i class="fa fa-eye"></i>
+  Marquer comme non-lu
+<% end %>

@@ -1,0 +1,7 @@
+// alert("email ajouté !")
+
+document.getElementById("emailObjects")
+.insertAdjacentHTML(
+  "beforeend",
+  "<%= j render 'emails/email_link', email: @email %>"
+)

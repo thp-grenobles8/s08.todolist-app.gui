@@ -1,0 +1,18 @@
+
+<%= link_to emails_path, method: :post,
+class: "btn btn-outline-primary", remote: true do %>
+  Recevoir un email
+<% end %>
+
+<div class="row mr-auto ml-auto" style="width: 100%;">
+
+  <div id="emailList" class="col-4 card">
+
+    <%= render "emails/list", emails: @emails %>
+
+  </div>
+  <div id="emailShow" class="col-8 card">
+
+  </div>
+
+</div>

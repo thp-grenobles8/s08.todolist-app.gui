@@ -1,0 +1,5 @@
+<li id="emailLink<%= email.id %>">
+  <%= link_to email_path(email), remote: true do %>
+    <%= email.object %>
+  <% end %>
+</li>
