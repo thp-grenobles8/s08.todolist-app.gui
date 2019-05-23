@@ -58,6 +58,7 @@ Mais demain, qui sait, peut-être simplement
 "tendances réprobatoires"].each { |object|
   Email.create!(
     object: object,
-    body: "..." + otis.slice(rand(0..(otis.length-600)),600) + "..."
+    body: "..." + otis.slice(rand(0..(otis.length-600)),600) + "...",
+    read: false
   )
 }

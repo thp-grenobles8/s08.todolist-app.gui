@@ -1,9 +1,17 @@
 
 document.getElementById("emailShow")
-.innerHTML = ""
+.innerHTML = "";
 
 document.getElementById("emailShow")
 .insertAdjacentHTML(
   "beforeend",
   "<%= j render 'emails/email_body', email: @email %>"
-)
+);
+
+document.getElementById("emailList")
+.innerHTML = "";
+document.getElementById("emailList")
+.insertAdjacentHTML(
+  "beforeend",
+  "<%= j render 'emails/list', emails: Email.all %>"
+);

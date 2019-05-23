@@ -8,7 +8,8 @@ class EmailsController < ApplicationController
   def create
     @email = Email.new(
       object: get_object,
-      body: get_otis_quote
+      body: get_otis_quote,
+      read: false
     )
     if @email.save
       respond_to do |format|
@@ -31,6 +32,8 @@ class EmailsController < ApplicationController
 
   def show
     @email = Email.find(params[:id])
+    @email.read = true
+    @email.save
     respond_to do |format|
       format.js {}
     end
